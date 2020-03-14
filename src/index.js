@@ -31,7 +31,7 @@ bracketsConfig.forEach(element => {
 for (let i = 0; i<newArr.length; i++) {
   if( str.includes(newArr[i]) ) {
     str = str.replace(newArr[i], "");  
-    i =-1; 
+    i =-1; // возвращаемся проверять все заново, т.к. -1 +1 в for i = 0
     // Возращаем строку без пары newArr[i] - (  ) 
     // Почему наличеи пробелов не влияет? (newArr[i].replace(/\s+/g, ''), "") - не дает никакого результата
     // i--; возвращаемся еще раз проверить
